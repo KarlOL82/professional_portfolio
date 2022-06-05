@@ -57,8 +57,23 @@ nav {
 }
 
 
+.bio h2 {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 2rem;
+    padding: 5px
+}
 
 .bio {
+    display:flex;
     background-color: var(--blue);
     color: var(--yellow);
+    border: solid var(--tan) 3px;
+}
+
+.bio p {
+    display:flex;
+    justify-content: flex-end;
+    padding: 10px
+
 }
