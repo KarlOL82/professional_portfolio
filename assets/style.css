@@ -77,15 +77,18 @@ nav {
 }
 
 #sidebar {
-    width: 15%;
+    
+    width: 200px;
     display:flex;
     justify-content: center;
     margin: 20px 10px 20px 5px;
     border: solid var(--blue);
+    flex: 1
 }
 
 .work_item {
-    width: 100%;
+    width: 200px;
+    height: 60px;
     justify-content: center;
     padding: 7px;
     color: var(--yellow);
