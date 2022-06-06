@@ -8,7 +8,7 @@
 
 * {
 
-    box-sizing:border-box
+    box-sizing: border-box
 
 }
 
@@ -20,8 +20,7 @@ body {
 #header {
     background-color: var(--blue);
     color: var(--yellow);
-    border: solid var(--tan) 3px;
-    
+    border: solid var(--tan) 3px;    
 }
 
 h1 {
@@ -56,24 +55,40 @@ nav {
     font-size: 3rem;
 }
 
-
-.bio h2 {
-    display: flex;
-    justify-content: flex-start;
-    font-size: 2rem;
-    padding: 5px
-}
-
 .bio {
-    display:flex;
+    display: inline-block;
     background-color: var(--blue);
     color: var(--yellow);
     border: solid var(--tan) 3px;
 }
 
-.bio p {
-    display:flex;
-    justify-content: flex-end;
-    padding: 10px
+.bio h2 {
+    
+    margin-top: 10px;
+    font-size: 2rem;
+    padding: 5px;
+    width: 100%;
+}
 
+.bio p {
+    flex-wrap: wrap;
+    display:flexbox;
+    padding: 5px;
+}
+
+#sidebar {
+    width: 15%;
+    display:flex;
+    justify-content: center;
+    margin: 20px 10px 20px 5px;
+    border: solid var(--blue);
+}
+
+.work_item {
+    width: 100%;
+    justify-content: center;
+    padding: 7px;
+    color: var(--yellow);
+    background-color: var(--brown);
+    border: solid var(--tan)    
 }
