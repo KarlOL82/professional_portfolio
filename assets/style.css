@@ -55,7 +55,7 @@ nav {
 #headshot {
     display: flex;
     height: 150px;
-    width: 200px;
+    width: auto;
 
 }
 
@@ -70,6 +70,8 @@ main {
     display: flex;
     flex-wrap: wrap;
 }
+
+
 
 
 
@@ -90,54 +92,117 @@ main {
 
 .bio p {
     flex-wrap: wrap;
-    display:flexbox;
     padding: 5px;
 }
+
+.sub_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--blue);
+    background-color: var(--tan);
+    padding: 10px;
+    margin: 5px, 0
+        
+}
+
+.sub_header_text {
+    display: flex;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+
 
 .flex-container {
 
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: stretch;
     justify-content: space-evenly;
 }
 
-.work_item {
-    display: flex;
+main img {
+    min-height: 200px;
+    max-height: 700px;
+    min-width: 200px;
+    max-height: 700px;
+    height:auto;
+    width: auto;
 }
 
-.project_item {
+
+.project_item1 img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px
+    
+}
+
+.project_item img {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-evenly;
+    width: 400px;
+    height: 400px;
+    max-height: 500px;
+    min-height: 400px;
+    min-width: 300px;
+    min-height: 300px;
 }
 
 #project_1 {
     display: flex;
     order: 1;
     flex-wrap: wrap;
-    height: 600px;
-    width:600px;
-    justify-content: center;
+}   
     
-
-}
-
 #project_2 {
     display: flex;
     order: 2;
     flex-wrap: wrap;
-    height: 300px;
-    width: 300px;
-
+    
+    
 }
 
 #project_3 {
     display:flex;
     order: 3;
     flex-wrap: wrap;
-    height: 300px;
-    width: 300px
 }
+
+
+
+
+
+.footer {
+    background-color: var(--blue);
+    color: var(--yellow);
+    border: solid var(--tan) 3px;
+    display:flex;
+    justify-content: flex-end;
+    margin-top: 50px    
+    
+}
+
+
+
+#contact_info {
+    
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.contact_item {
+    
+    color: var(--yellow);
+    padding: 10px;
+    font-weight: bold;
+    display: flex; 
+    
+}
+
+
 
