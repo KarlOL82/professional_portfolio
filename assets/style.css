@@ -1,3 +1,4 @@
+/* Chose color pallete to use throughout */
 :root {
     --blue: #12263A;
     --brown: #846C5B;
@@ -11,7 +12,7 @@
     box-sizing: border-box
 
 }
-
+/* wanted to use the same fon throughout page*/
 body {
     background-color: var(--pale);
     font-family: Arial, Helvetica, sans-serif;
@@ -51,7 +52,7 @@ nav {
 }
 
 
-
+/* yes, I took a selfie with my laptop */
 #headshot {
     display: flex;
     height: 150px;
@@ -113,7 +114,7 @@ main {
 }
 
 
-
+/* CSS styling in this section seems excessive but it was the only way I could get things lined up. Will need to clean it up later */
 .flex-container {
 
     display: flex;
@@ -121,7 +122,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
 }
-
+/*had to add size constraints becaue images were too dissimilar */
 main img {
     min-height: 200px;
     max-height: 700px;
@@ -131,15 +132,17 @@ main img {
     width: auto;
 }
 
-
+/* had a hard time getting this image to stay larger and the others the same size */
 .project_item1 img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 100px
     
+    
 }
 
+/* A lot of trial and error getting this to be same size, can probably eliminate some redundancy */
 .project_item img {
     display: flex;
     flex-direction: row;
@@ -156,13 +159,14 @@ main img {
     display: flex;
     order: 1;
     flex-wrap: wrap;
+    border: solid 5px var(--blue);
 }   
     
 #project_2 {
     display: flex;
     order: 2;
     flex-wrap: wrap;
-    
+    border: solid 5px var(--blue);
     
 }
 
@@ -170,6 +174,7 @@ main img {
     display:flex;
     order: 3;
     flex-wrap: wrap;
+    border: solid 5px var(--blue);
 }
 
 
@@ -202,6 +207,26 @@ main img {
     font-weight: bold;
     display: flex; 
     
+}
+
+@media screen and (max-width: 992px) {
+
+    .project_item1 {
+        width: 75% 
+    }
+
+    .project_item {
+        width: 50%;
+    }
+
+    
+}
+
+@media screen and (max-width: 768px) {
+    .project_item {
+        flex-direction: column;
+        width: 50%
+    }
 }
 
 
