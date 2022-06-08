@@ -42,18 +42,36 @@ nav {
 
 .banner {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: var(--blue);
     background-color: var(--tan);
     padding: 10px;
     margin: 5px, 0    
 }
 
-.banner_text {
 
+
+#headshot {
+    display: flex;
+    height: 150px;
+    width: 200px;
+
+}
+
+#banner_text {
+    display: flex;
     font-weight: bolder;
     font-size: 3rem;
+    
 }
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 
 .bio {
     display: inline-block;
@@ -76,22 +94,50 @@ nav {
     padding: 5px;
 }
 
-#sidebar {
-    
-    width: 200px;
-    display:flex;
-    justify-content: center;
-    margin: 20px 10px 20px 5px;
-    border: solid var(--blue);
-    flex: 1
+.flex-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
 .work_item {
-    width: 200px;
-    height: 60px;
-    justify-content: center;
-    padding: 7px;
-    color: var(--yellow);
-    background-color: var(--brown);
-    border: solid var(--tan)    
+    display: flex;
 }
+
+.project_item {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#project_1 {
+    display: flex;
+    order: 1;
+    flex-wrap: wrap;
+    height: 600px;
+    width:600px;
+    justify-content: center;
+    
+
+}
+
+#project_2 {
+    display: flex;
+    order: 2;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px;
+
+}
+
+#project_3 {
+    display:flex;
+    order: 3;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 300px
+}
+
